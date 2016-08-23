@@ -19,6 +19,7 @@
 		CC551AF41D48992F002C09D5 /* RequestUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CC551AF31D48992F002C09D5 /* RequestUtil.m */; };
 		CCB1188A1D6AAA1300C0E5A3 /* NSObject+JLProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB118891D6AAA1300C0E5A3 /* NSObject+JLProperty.m */; };
 		CCB1188D1D6AEB3200C0E5A3 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB1188C1D6AEB3200C0E5A3 /* Product.m */; };
+		CCDE776D1D6BE7E2007A45C4 /* NSObject+JLArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDE776C1D6BE7E2007A45C4 /* NSObject+JLArchive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		CCB118891D6AAA1300C0E5A3 /* NSObject+JLProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JLProperty.m"; sourceTree = "<group>"; };
 		CCB1188B1D6AEB3200C0E5A3 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		CCB1188C1D6AEB3200C0E5A3 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		CCDE776B1D6BE7E2007A45C4 /* NSObject+JLArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JLArchive.h"; sourceTree = "<group>"; };
+		CCDE776C1D6BE7E2007A45C4 /* NSObject+JLArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JLArchive.m"; sourceTree = "<group>"; };
 		D6FE4762929BA4FB3A4995BC /* Pods-JLNetTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JLNetTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JLNetTest/Pods-JLNetTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +145,8 @@
 				CC551AF31D48992F002C09D5 /* RequestUtil.m */,
 				CCB118881D6AAA1300C0E5A3 /* NSObject+JLProperty.h */,
 				CCB118891D6AAA1300C0E5A3 /* NSObject+JLProperty.m */,
+				CCDE776B1D6BE7E2007A45C4 /* NSObject+JLArchive.h */,
+				CCDE776C1D6BE7E2007A45C4 /* NSObject+JLArchive.m */,
 				CCB1188B1D6AEB3200C0E5A3 /* Product.h */,
 				CCB1188C1D6AEB3200C0E5A3 /* Product.m */,
 				CC551AC81D48978D002C09D5 /* Main.storyboard */,
@@ -365,6 +370,7 @@
 				CC551AC41D48978D002C09D5 /* AppDelegate.m in Sources */,
 				CCB1188D1D6AEB3200C0E5A3 /* Product.m in Sources */,
 				CC551AC11D48978D002C09D5 /* main.m in Sources */,
+				CCDE776D1D6BE7E2007A45C4 /* NSObject+JLArchive.m in Sources */,
 				CC551AF41D48992F002C09D5 /* RequestUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

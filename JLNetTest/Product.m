@@ -9,5 +9,7 @@
 #import "Product.h"
 
 @implementation Product
-
++(NSDictionary *)replaceKeyFromPropertyName {
+    return @{@"cityName":@"cityAllEnName",@"supName":@"cityId"};
+}
 @end

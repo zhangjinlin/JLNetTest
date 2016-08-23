@@ -9,9 +9,6 @@
 #import "NSObject+JLProperty.h"
 #import <objc/runtime.h>
 
-
-
-
 @implementation NSObject (JLProperty)
 
 +(instancetype)objectWithDictionary:(NSDictionary *)dictionary {
@@ -23,8 +20,11 @@
     for (unsigned int i= 0 ; i< count; i++) {
         Ivar ivar = ivars[i];
         NSString *ivarName = [NSString stringWithUTF8String:ivar_getName(ivar)];
-        NSString *key      = [ivarName substringToIndex:1];
+        NSString *key      = [ivarName substringFromIndex:1];
         id value = dictionary[key];
+        if ([value isKindOfClass:[NSNull class]]) {
+            value = @"";
+        }
         if (!value)
         {
             if ([self respondsToSelector:@selector(replaceKeyFromPropertyName)])
@@ -39,9 +39,9 @@
         {
             NSString *type = [NSString stringWithUTF8String:ivar_getTypeEncoding(ivar)];
             NSRange range = [type rangeOfString:@"\""];
-            type = [type substringFromIndex:range.location + range.length];
+            type  = [type substringFromIndex:range.location + range.length];
             range = [type rangeOfString:@"\""];
-            type = [type substringToIndex:range.location];
+            type  = [type substringToIndex:range.location];
             Class modelClass = NSClassFromString(type);
             
             if (modelClass)
@@ -80,6 +80,7 @@
     
     return obj;
 }
+
 
 
 @end

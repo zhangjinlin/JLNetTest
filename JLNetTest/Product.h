@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NSObject+JLProperty.h"
 @interface Product : NSObject
-@property (strong, nonatomic) NSString *degreeLabel;
-@property (strong, nonatomic) NSString *jobLocationLabel;
+@property (strong, nonatomic) NSString *childCity;
+@property (strong, nonatomic) NSDictionary *supName;
 
-@property (strong, nonatomic) NSString *memId;
-@property (strong, nonatomic) NSString *memName;
+@property (strong, nonatomic) NSString *cityName;
+@property (strong, nonatomic) NSString *cityEnName;
 @property (strong, nonatomic) NSString *posId;
 @property (strong, nonatomic) NSString *posName;
 @property (strong, nonatomic) NSString *postDateLable;
